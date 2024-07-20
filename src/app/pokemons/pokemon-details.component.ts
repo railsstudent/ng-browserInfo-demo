@@ -20,6 +20,14 @@ import { RouterLink } from '@angular/router';
           <span>{{ p.name }}</span>
         </div>
         <div>
+          <span>Weight: </span>
+          <span>{{ p.weight }}</span>
+        </div>
+        <div>
+          <span>Height: </span>
+          <span>{{ p.height }}</span>
+        </div>
+        <div>
           <img [src]="p.imageUrl" alt="{{ p.name }}'s Image" />
         </div>
       } @else {
@@ -33,6 +41,10 @@ import { RouterLink } from '@angular/router';
   styles: `
     span {
       font-size: 1rem;
+    }
+
+    div.row > div {
+      margin-bottom: 0.5rem;
     }
 
     img {
