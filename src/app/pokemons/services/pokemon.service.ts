@@ -34,7 +34,7 @@ export class PokemonService {
 
     return this.http.get<RawPokemon>(`${POKEMON_URL}/${name}`)
       .pipe(
-        map(({ id, name, sprites }) => ({ id, name, imageUrl: sprites.front_shiny }) as Pokemon),
+        map(({ id, name, sprites, weight, height }) => ({ id, name, weight, height, imageUrl: sprites.front_shiny }) as Pokemon),
         catchError((err) => {
           console.error(err);
           return of(undefined);
