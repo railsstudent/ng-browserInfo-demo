@@ -6,7 +6,7 @@ import { PokemonSlim } from './types/pokemon-slim.type';
 @Component({
   selector: 'app-pokemon-list',
   standalone: true,
-  imports: [RouterLink, TitleCasePipe],
+  imports: [TitleCasePipe],
   template: `
     <h2>Pokemon List</h2>
     <div class="root">
