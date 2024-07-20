@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, inject, input } from "@angular/core";
-import { Router, RouterLink } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject, input } from "@angular/core";
+import { Router } from '@angular/router';
 import { PokemonSlim } from './types/pokemon-slim.type';
 
 @Component({
